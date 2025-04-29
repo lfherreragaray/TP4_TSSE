@@ -52,49 +52,49 @@ extern "C" {
 /* === Declaraciones de funciones públicas =================================================== */
 
 /**
-*@brief Funcion para inicializar la biblioteca de leds
-*
-*@note Esta funcion debe ser llamada antes de utilizar cualquier otra funcion de la biblioteca
-*
-*@param direccion_puerto Puntero al puerto GPIO que controla los leds
-*/
+ *@brief Funcion para inicializar la biblioteca de leds
+ *
+ *@note Esta funcion debe ser llamada antes de utilizar cualquier otra funcion de la biblioteca
+ *
+ *@param direccion_puerto Puntero al puerto GPIO que controla los leds
+ */
 void LedsInit(uint16_t * direccion_puerto);
 
 /**
-*@brief Funcion para prender un led individual
-*
-*
-*@param led Numero de led que se desea prender (1 a 16)
-*/
+ *@brief Funcion para prender un led individual
+ *
+ *
+ *@param led Numero de led que se desea prender (1 a 16)
+ */
 void LedTurnOnSingle(uint8_t led);
 
 /**
-*@brief Funcion para apagar un led individual
-*
-*
-*@param led Numero de led que se desea apagar (1 a 16)
-*/
+ *@brief Funcion para apagar un led individual
+ *
+ *
+ *@param led Numero de led que se desea apagar (1 a 16)
+ */
 void LedTurnOffSingle(uint8_t led);
 
 /**
-*@brief Funcion para prender todo el puerto de leds
-*
-*
-*/
- void LedTurnOnAll(void);
+ *@brief Funcion para prender todo el puerto de leds
+ *
+ *
+ */
+void LedTurnOnAll(void);
 
 /**
-*@brief Funcion para apagar todo el puerto de leds
-*
-*
-*/
- void LedTurnOffAll(void);
- 
+ *@brief Funcion para apagar todo el puerto de leds
+ *
+ *
+ */
+void LedTurnOffAll(void);
+
 /**
-*@brief Funcion para apagar todo el puerto de leds
-*
-*@param led Numero de led que se desea consultar (1 a 16)
-*/
+ *@brief Funcion para apagar todo el puerto de leds
+ *
+ *@param led Numero de led que se desea consultar (1 a 16)
+ */
 uint8_t IsLedOn(uint8_t led);
 /* === Fin de la documentación ============================================================= */
 
